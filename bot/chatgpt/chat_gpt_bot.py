@@ -42,7 +42,7 @@ class ChatGPTBot(Bot, OpenAIImage):
             # "request_timeout": conf().get("request_timeout", None),  # 请求超时时间，openai接口默认设置为600，对于难问题一般需要较长时间
             # "timeout": conf().get("request_timeout", None),  # 重试超时时间，在这个时间内，将会自动重试
         }
-        self.client = openai.OpenAI(api_key="sk-YTNC6nKnopVQKt4fXBp4k4gX0GODOo0puTU3v77ie2dzzNup",base_url="https://api.moonshot.cn/v1",
+        self.client = openai.OpenAI(api_key="sk-",base_url="https://api.moonshot.cn/v1",
 )
         # print(self.args)
 
