@@ -42,7 +42,7 @@ class ChatGPTBot(Bot, OpenAIImage):
             # "request_timeout": conf().get("request_timeout", None),  # 请求超时时间，openai接口默认设置为600，对于难问题一般需要较长时间
             # "timeout": conf().get("request_timeout", None),  # 重试超时时间，在这个时间内，将会自动重试
         }
-        self.client = openai.OpenAI(api_key="",base_url="https://api.moonshot.cn/v1",
+        self.client = openai.OpenAI(api_key="sk-JRCwfuVzJGZQmlYcfSqm04SnmzmtRqYe6OfBNKYifwbLUdVc",base_url="https://api.moonshot.cn/v1",
 )
         # print(self.args)
 
@@ -123,7 +123,14 @@ class ChatGPTBot(Bot, OpenAIImage):
             # if api_key == None, the default openai.api_key will be used
             if args is None:
                 args = self.args
+            print("args is ========================",args)
+            print(session.messages)
+
             response = self.client.chat.completions.create(messages=session.messages, **args)
+            
+            print(                "total_tokens: ", response.usage.total_tokens,
+                "completion_tokens: ", response.usage.completion_tokens,
+                "content: ", response.choices[0].message.content)
 
             # response = openai.ChatCompletion.create(api_key=api_key, messages=session.messages, **args)
             # logger.debug("[CHATGPT] response={}".format(response))

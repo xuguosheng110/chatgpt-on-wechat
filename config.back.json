@@ -1,0 +1,48 @@
+{
+  "channel_type": "wx",
+  "model": "moonshot-v1-8k",
+  "open_ai_api_key": "sk-JRCwfuVzJGZQmlYcfSqm04SnmzmtRqYe6OfBNKYifwbLUdVc",
+  "claude_api_key": "YOUR API KEY",
+  "text_to_image": "dall-e-2",
+  "voice_to_text": "openai",
+  "text_to_voice": "openai",
+  "proxy": "",
+  "hot_reload": false,
+  "single_chat_prefix": [
+    "bot",
+    "@bot"
+  ],
+  "single_chat_reply_prefix": "[bot] ",
+
+  "group_chat_keyword": ["@小助手","请问"],  
+
+  "group_chat_reply_prefix": "您好：", 
+
+  "group_chat_reply_suffix": "\n,我们鼓励您在社区中积极发帖，可以共同构建一个丰富的知识库，帮助其他遇到相似问题的开发者快速找到答案。",  
+  "group_name_white_list": [  
+    "学习互助小组","地平线机器人开发平台交流1群","地平线机器人开发平台交流2群","地平线机器人开发平台交流3群",
+    "地平线机器人开发平台交流4群","地平线机器人开发平台交流5群","地平线机器人开发平台6群","地平线机器人开发平台7群","地平线机器人开发平台8群",
+    "地平线机器人开发平台9群","地平线机器人平台交流群10","地平线机器人平台交流群11","相亲相爱一家人"],
+
+  "group_welcome_msg": "欢迎加入我们的交流群! \n 资料获取: 请查看群公告,我们为你准备了丰富的入门资料! \n 开发者社区:欢迎访问开发者社区developer.horizon.cc, 有全套的开发资料等你来探索。问题反馈：如果在使用过程中遇到任何问题，或者有任何建议，欢迎随时在社区上提出，我们会尽快给你反馈。 \n 让我们共同打造一个互助、共享、进步的社群环境！期待你的积极参与和宝贵意见。",
+
+  "nick_name_black_list": [], 
+
+
+  "image_create_prefix": [
+    "画"
+  ],
+  "speech_recognition": true,
+  "group_speech_recognition": false,
+  "voice_reply_voice": false,
+  "conversation_max_tokens": 2500,
+  "expires_in_seconds": 3600,
+  "character_desc": "",
+  "temperature": 0.7,
+  "subscribe_msg": "感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。",
+  "use_linkai": false,
+  "linkai_api_key": "",
+  "linkai_app_code": ""
+
+
+}
